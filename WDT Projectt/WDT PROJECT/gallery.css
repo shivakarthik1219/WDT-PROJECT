@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: #b7c2cd;  
+}
+
+.navbar-brand img{
+    width: 30%;
+    height: auto;
+}
+
+.navbar-toggler{
+    color: #2b2b2b;
+    border-color: #2b2b2b;
+    position: absolute;
+    right: 1rem;
+}
+
+.navbar-collapse{
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: black;
+    width: 100%;
+    background-color: #b7c2cd;
+    z-index: 1;
+}
+.navbar-nav .nav-link{
+    color: #2b2b2b;
+    font-weight: 700;
+    
+}
+
+.btn{
+    background-color: #5a6ebc;
+    color: white;
+    font-weight: 600;
+    line-height: auto;
+    margin-top: 0.2rem;
+    align-items: center;
+}
+
+.btn:active, .btn:hover{
+    background-color:  #5a6ebc;
+    color: rgb(1, 1, 1);
+}
+
+.heading h2{
+    text-align: center;
+    color:#5a6ebc;
+    font-weight: 700;
+    margin: 1rem;
+    text-transform: uppercase;
+
+}
+
+.heading p{
+    text-align: center;
+    color: #333333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.galleryc{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+.galleryitem{
+    width: 30%;
+    height: auto;
+    padding: 0.5rem;
+    
+}
+
+.galleryitem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.galleryitem img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.foot{
+    background-color: #b7c2cd;
+    display: flex;
+    gap: 8%;
+}
+
+.foot .li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.foot .li h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2b2b2b;
+    
+}
+
+.li p{
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.foot .qu,.con,.soc{
+    margin-top: 1%;
+}
+
+.qu h4,.con h4,.soc h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.qu a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.con p{
+    color: #333333;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 550;
+}
+
+.foot1{
+    background-color: #b7c2cd;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.soc p{
+    text-align: center;
+    
+}
+.soc a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.8rem;
+}
+.ter h5{
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.ter a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.copy{
+    background-color: #b7c2cd;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copy p{
+    margin: 0;
+}
+
+
+/* ------------ RESPONSIVE DESIGN ------------ */
+
+@media (max-width: 992px) {
+    .galleryitem {
+        width: 45%;
+    }
+
+    .navbar-brand img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .galleryc {
+        justify-content: center;
+    }
+
+    .galleryitem {
+        width: 80%;
+    }
+
+    .foot {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .galleryitem {
+        width: 100%;
+    }
+}

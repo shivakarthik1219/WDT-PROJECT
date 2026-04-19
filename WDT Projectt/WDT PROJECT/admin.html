@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login • Tra Hotels</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+</head>
+<body>
+
+     <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Images/image-removebg-preview (2).png"  alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto  gap-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn ms-0" href="admin.html">Login</a>
+            </li>
+          </ul>
+
+        </div>
+       
+      </div>
+    </nav>
+  </header>
+
+    <div class="login-box">
+        <h3 class="text-center mb-4">Admin Login</h3>
+
+        <form>
+            <div class="mb-3">
+                <label for="adminEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="adminEmail" placeholder="admin@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="adminPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="adminPassword" placeholder="Enter Password">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember Me</label>
+            </div>
+
+            <button type="button" class="btn btn-primary w-100" onclick="loginAdmin()">Login</button>
+        </form>
+    </div>
+
+
+    <footer>
+    <div class="foot">
+      <div class="li">
+        
+        <img src="Images/image-removebg-preview (2).png" width="200vw" height="100vh" alt="">
+        <h4>Reach Us</h4>
+        <p>Tra Hotels Ltd.,Sector-5,Nehru Road,Mumbai-431005.</p>
+      </div>
+
+      <div class="qu">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="con">
+        <h4>Contact Us</h4>
+        <p>
+          <i class="ri-phone-fill"> +91 9876543210</i> <br><i class="ri-mail-fill"> trahotelssupport@gmail.com</i>  </p>    
+     </div>
+
+      <div class="soc">
+      <h4>Social Media</h4>
+      <p>
+        <a href=""><i class="ri-facebook-fill"></i></a>
+       <a href="" class="ri-instagram-fill"></a>
+       <a href="" class="ri-youtube-fill"></a>
+       <a href=""><i class="ri-linkedin-fill"></i></a>
+      </p>
+
+    <div class="ter">
+    <h5>Terms & Conditions</h5>
+    <a href="">Privacy Policy</a> <br>
+    <a href="">Terms & Conditions</a>
+    </div>
+     </div>
+     
+      
+    </div>
+    
+    <div class="copy">
+    <p > &copy; 2024 Tra Hotels. All rights reserved.</p>
+  </div>
+  </footer>
+
+
+    <script>
+        function loginAdmin() {
+            // Simple redirect (NO backend)
+            window.location.href = "ahome.html";
+        }
+    </script>
+
+</body>
+</html>

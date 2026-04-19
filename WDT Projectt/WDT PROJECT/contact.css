@@ -1,0 +1,305 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+body{
+    background-color: #e5e9ee;
+}
+.navbar{
+    background-color: #b7c2cd;  
+}
+
+.navbar-brand img{
+    width: 30%;
+    height: auto;
+}
+
+.navbar-toggler{
+    color: #2b2b2b;
+    border-color: #2b2b2b;
+    position: absolute;
+    right: 1rem;
+}
+
+.navbar-collapse{
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: black;
+    width: 100%;
+    background-color: #b7c2cd;
+    z-index: 1;
+}
+.navbar-nav .nav-link{
+    color: #2b2b2b;
+    font-weight: 700;
+    
+}
+
+.btn{
+    background-color: #5a6ebc;
+    color: white;
+    font-weight: 600;
+    line-height: auto;
+    margin-top: 0.2rem;
+    align-items: center;
+}
+
+.btn:active, .btn:hover{
+    background-color:  #5a6ebc;
+    color: rgb(1, 1, 1);
+}
+
+.head h1{
+    text-align: center;
+    color: #5a6ebc;
+    text-transform: uppercase;
+    font-weight: 650;
+    margin-top: 1rem;
+}
+
+.head p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+     margin: 2rem;
+     align-items: center;
+
+}
+
+.info{
+    width: 40%;
+    height: auto;
+
+}
+.info h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.2rem;
+}
+.add p{
+    font-size: 1.2rem;
+    font-weight: 500;   
+    color: #333333;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+
+.cform{
+    border: 3px solid black;
+    border-radius: 5px;
+    gap: 1rem;
+    width: 40%;
+    height: 90%;
+    text-align: left;
+    padding: 1rem;
+    /* margin-bottom: 2rem; */
+}
+
+.cform h3{
+    text-align: center;
+    font-weight: 700;
+    color: #2b2b2b;
+    text-transform: uppercase;
+}
+
+.cform p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
+    text-align: center;
+}
+
+.cform label{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.cform input , .cform textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.cform .submit{
+    background-color: #5a6ebc;
+    color: white;
+    font-weight: 600;
+    line-height: auto;
+    align-items: center;
+    margin: auto;
+} 
+.submit:hover{
+    transform: scale(1.005);
+    background-color:  #5a6ebc;
+    color: rgb(1, 1, 1);
+}
+
+
+
+.foot{
+    background-color: #b7c2cd;
+    display: flex;
+    gap: 8%;
+}
+
+.foot .li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.foot .li h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2b2b2b;
+    
+}
+
+.li p{
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.foot .qu,.con,.soc{
+    margin-top: 1%;
+}
+
+.qu h4,.con h4,.soc h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.qu a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.con p{
+    color: #333333;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 550;
+}
+
+.foot1{
+    background-color: #b7c2cd;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.soc p{
+    text-align: center;
+    
+}
+.soc a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.8rem;
+}
+.ter h5{
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.ter a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.copy{
+    background-color: #b7c2cd;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copy p{
+    margin: 0;
+}
+
+/* ------------ RESPONSIVE DESIGN ------------ */
+@media (max-width: 992px) {
+    .navbar-brand img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Main container stack */
+    .main {
+        flex-direction: column;
+        margin: 1rem;
+        gap: 2rem;
+    }
+
+    .info,
+    .cform {
+        width: 100%;
+    }
+
+    .info h4 {
+        font-size: 2rem;
+    }
+
+    .add p {
+        font-size: 1rem;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    /* Footer responsive */
+    .foot {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .head h1 {
+        font-size: 1.8rem;
+    }
+
+    .cform {
+        padding: 0.8rem;
+    }
+
+    .cform label {
+        font-size: 1rem;
+    }
+}

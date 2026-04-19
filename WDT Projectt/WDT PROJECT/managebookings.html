@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Bookings • Admin Panel</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="managebookings.css">
+</head>
+
+<body>
+
+ <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="Images/image-removebg-preview (2).png" alt="">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="adminNavbar">
+
+      <ul class="navbar-nav ms-auto gap-3">
+
+        <li class="nav-item">
+          <a class="nav-link" href="ahome.html">Dashboard</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="addroom.html">Add Room</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="managerooms.html"> Manage Rooms</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="managebookings.html"> Bookings</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+             Admin
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="adminprofile.html"><i class="ri-user-line"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="home.html"><i class="ri-logout-box-r-line"></i> Logout</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+
+    <h2 class="page-title mb-4">Manage Bookings</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="booking-card">
+          <img src="https://www.parkregiskriskin.ae/wp-content/uploads/2020/07/room-twin-bed-2520x1400.jpg">
+
+          <div class="booking-info">
+            <h5>Rohit Sharma</h5>
+            <p class="room-type">Deluxe Twin Bed</p>
+
+            <div class="date-box">
+              <p><strong>Check-in:</strong> 12 Feb 2025</p>
+              <p><strong>Check-out:</strong> 14 Feb 2025</p>
+            </div>
+
+            <p class="guests">Guests: 2</p>
+            <span class="status confirmed">Confirmed</span>
+
+            <div class="btn-box">
+              <button class="btn btn-edit"><i class="ri-edit-line"></i> Edit</button>
+              <button class="btn btn-delete"><i class="ri-delete-bin-line"></i> Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="booking-card">
+          <img src="https://expressinnindia.com/wp-content/uploads/2022/08/PRESIDENTIAL-SUITE-1-scaled.jpg">
+
+          <div class="booking-info">
+            <h5>Sneha Patil</h5>
+            <p class="room-type">Chairman Suite</p>
+
+            <div class="date-box">
+              <p><strong>Check-in:</strong> 18 Feb 2025</p>
+              <p><strong>Check-out:</strong> 20 Feb 2025</p>
+            </div>
+
+            <p class="guests">Guests: 4</p>
+            <span class="status pending">Pending</span>
+
+            <div class="btn-box">
+              <button class="btn btn-edit"><i class="ri-edit-line"></i> Edit</button>
+              <button class="btn btn-delete"><i class="ri-delete-bin-line"></i> Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="booking-card">
+          <img src="https://images.trvl-media.com/lodging/38000000/37600000/37590700/37590630/8501204f.jpg">
+
+          <div class="booking-info">
+            <h5>Aman Verma</h5>
+            <p class="room-type">Executive Room</p>
+
+            <div class="date-box">
+              <p><strong>Check-in:</strong> 22 Feb 2025</p>
+              <p><strong>Check-out:</strong> 24 Feb 2025</p>
+            </div>
+
+            <p class="guests">Guests: 1</p>
+            <span class="status cancelled">Cancelled</span>
+
+            <div class="btn-box">
+              <button class="btn btn-edit"><i class="ri-edit-line"></i> Edit</button>
+              <button class="btn btn-delete"><i class="ri-delete-bin-line"></i> Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
